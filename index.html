@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Black & White Image Converter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon"  href="https://i.pinimg.com/originals/0d/38/a6/0d38a6aa1acec423ff693b021a1cdda1.png">
+<style>
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 900; /* boldest font weight available in Oswald font */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./Images/indexwflowerbg.jpg');
+    background-size: cover; /* Set background image to cover entire viewport */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fix background position */
+    color: #333333;
+    min-height: 100vh; /* Ensure at least full viewport height */
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    overflow: hidden;
+}
+
+/* Styling for the header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Styling for the icons */
+.header a {
+    color: white;
+    margin-left: 10px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 2200px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.overlay-text h1 span {
+    color: black; /* Make the word "Black" black */
+}
+.overlay-text p span {
+    color: black; /* Make the word "Black" black */
+    font-weight: 300;
+}
+
+.convert-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color:black; /* green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.convert-button:hover {
+    background-color: crimson; /* darker green on hover */
+}
+
+</style>
+</head>
+<body>
+
+<!-- Header containing social media icons -->
+<div class="header">
+    <div class="w3-bar w3-black w3-hide-small">
+        <a href="privacypolicy.html" class="w3-bar-item w3-button"><i class="fa fa-bullhorn"></i></a>
+        <a href="https://github.com/GithubRaviSharma" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ravi-sharma-586838287/" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+        <a href="https://twitter.com/raviiiiiiiiiii_" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+        <a href="Contactus.html" class="w3-bar-item w3-button w3-right"><i class="fa fa-address-book"></i></a>
+    </div>
+</div>
+
+<!-- Overlay Text -->
+<div class="overlay-text">
+    <h1><span>Black</span> & White Image Converter</h1>
+    <p><span>Convert your images to black and white with ease</span></p>
+    <button onclick="window.location.href='convert4k.html'" class="convert-button">Convert 4k</button>
+  </div>
+  
+</body>
+</html>
