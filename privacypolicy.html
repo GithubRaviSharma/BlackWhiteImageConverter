@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Privacy Policy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon"  href="https://i.pinimg.com/originals/0d/38/a6/0d38a6aa1acec423ff693b021a1cdda1.png">
+<style>
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 900; /* boldest font weight available in Oswald font */
+}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Styling for the icons */
+.header a {
+    color: white;
+    margin-left: 10px;
+}
+.overlay-text {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    z-index: 1; /* Ensure text appears above other elements */
+    font-size: 9px;
+}
+.overlay-text h1 span{
+    color: white; /* Make the word "Black" black */
+    font-size: 25px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./Images/PrivacyPolicybg.jpg');
+    background-size: cover; /* Set background image to cover entire viewport */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fix background position */
+    color: #333333;
+    min-height: 100vh; /* Ensure at least full viewport height */
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    overflow: hidden;
+}
+.container {
+    position: absolute; /* Position the container relative to its closest positioned ancestor */
+    left: 70%; /* Align container 70% from the left side of the webpage */
+    transform: translateX(-50%); /* Center the container horizontally */
+    width: 50vw; /* Set the width to 50% of the viewport width */
+    height: 60vh; /* Set the height to 60% of the viewport height */
+    margin-top: 20px; /* Space between text and container */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden; /* Allow content to scroll if it exceeds container dimensions */
+}
+
+
+iframe {
+    width: 100%;
+    height: 100%; /* Adjust height as needed */
+    border: black;
+}
+
+
+</style>
+</head>
+<body>
+<!-- Header containing social media icons -->
+<div class="header">
+    <div class="w3-bar w3-black w3-hide-small">
+        <a href="https://github.com/GithubRaviSharma" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ravi-sharma-586838287/" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+        <a href="https://twitter.com/raviiiiiiiiiii_" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-right"><i class="fa fa-arrow-left"></i></a>
+        
+    </div>
+</div>
+
+<div class="container">
+    <iframe src="BWICPrivacyPolicy.pdf" frameborder="0"></iframe>
+</div>
+
+</body>
+</html>

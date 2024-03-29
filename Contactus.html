@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="vcc-logo.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon"  href="https://i.pinimg.com/originals/0d/38/a6/0d38a6aa1acec423ff693b021a1cdda1.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Styling for the icons */
+.header a {
+    color: white;
+    margin-left: 10px;
+}
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('./Images/Contactusbgray.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Make the body fill the entire viewport height */
+        }
+        .container {
+            position: relative;
+            margin-left: 700px;
+    margin-top: 40px;
+    width: 650px;       
+    font-family: 'Poppins', sans-serif;
+    color: white; /* Set text color to white */
+    max-width: 800px;
+    padding: 20px;
+    background-color: black; /* Setting background color to black */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+}
+
+        h1 {
+            text-align: center;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid white;
+            font-weight: 200;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: black; /* Set input text color to black */
+}
+
+input[type="submit"] {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 0; /* Adjust padding */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make submit button occupy maximum width */
+}
+input[type="submit"]:hover {
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="w3-bar w3-black w3-hide-small">
+            <a href="https://github.com/GithubRaviSharma" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ravi-sharma-586838287/" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/raviiiiiiiiiii_" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-right"><i class="fa fa-arrow-left"></i></a>
+        </div>
+    </div>
+    <div id="contact-id" class="container">
+        <h1 style="font-family: 'sans-serif', sans-serif;font-weight: 900; font-size: 36px; width: 100%; text-align: center;">Contact Us</h1>
+        <div class="contact-info">
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f1d0c622-1345-4b66-8fb4-e742bb587031">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
+

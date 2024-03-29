@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Covert4k</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon"  href="https://i.pinimg.com/originals/0d/38/a6/0d38a6aa1acec423ff693b021a1cdda1.png">
+<style>
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 900; /* boldest font weight available in Oswald font */
+}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Styling for the icons */
+.header a {
+    color: white;
+    margin-left: 10px;
+}
+.overlay-text {
+    position: absolute;
+    top: 2%;
+    left: 50%; /* Adjusted left position to center the text */
+    transform: translateX(-50%); /* Centering the text horizontally */
+    padding: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    z-index: 1; /* Ensure text appears above other elements */
+    font-size: 20px; /* Increased font size for better visibility */
+}
+.overlay-text h1 span{
+    color: white; /* Make the word "Black" black */
+    font-size: 25px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./Images/Grae.png');
+    background-size: cover; /* Set background image to cover entire viewport */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fix background position */
+    color: #333333;
+    min-height: 100vh; /* Ensure at least full viewport height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    overflow: hidden;
+}
+
+/* Container 1 styles */
+.container1 {
+  background-color: black;
+  color: white;
+  padding: 10px; /* Reduced padding */
+  border-radius: 10px;
+  width: 300px; /* Adjust width as needed */
+  height: 700px; /* Adjust height as needed */
+  margin-top: 40px;
+  flex: 1; /* Let containers flexibly grow */
+  max-width: 500px; /* Set maximum width */
+  max-height: 1000px; /* Set maximum height */
+  overflow: hidden; /* Add scrollbars if content exceeds container size */
+  position: relative; /* Required for absolute positioning of image preview */
+}
+
+/* Container 2 styles */
+.container2 {
+    background-color: black;
+    color: white;
+    padding: 10px; /* Reduced padding */
+    border-radius: 10px;
+    width: 300px;
+    height: 700px;
+    margin-top: 40px;
+    flex: 1; /* Let containers flexibly grow */
+    max-width: 500px; /* Set maximum width */
+    max-height: 1000px; /* Set maximum height */
+    overflow: hidden; /* Add scrollbars if content exceeds container size */
+    position: relative; /* Required for absolute positioning */
+}
+.button-container {
+    position: absolute;
+    bottom: 10px; /* Adjusted bottom position */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Button 1 styles */
+.button1 {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Ensures the button occupies full width */
+    width: 470px; /* Makes button occupy full width */
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button1:hover {
+  background-color: crimson; /* Light gray on hover (adjust as desired) */
+}
+/* Button 2 styles */
+.button2 {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Ensures the button occupies full width */
+    width: 470px; /* Makes button occupy full width */
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button2:hover {
+  background-color: crimson; /* Light gray on hover (adjust as desired) */
+}
+.img-button {
+    cursor: pointer;
+    width: 180px; /* Set width of image button */
+    height: 180px; /* Set height of image button */
+    background-image: url('https://www.svgrepo.com/show/46301/right-straight-arrow.svg'); /* Add your image URL here */
+    background-size: cover;
+    border-radius: 10px;
+    margin: 35px ; /* Adjust margin as needed */
+}
+.img-button:hover {
+    background-color: gray;
+}
+#imageUpload {
+  display: none;
+}
+.image-preview {
+  margin-top: 30px;
+  margin: 0 auto; /* Center the image horizontally */
+  display: block; /* Ensure the image takes up full width */
+  max-width: 400px; /* Set a maximum width for the image */
+  max-height: 600px;
+  width: auto;
+  height: auto; /* Maintain aspect ratio */
+  padding: 10px; /* Add margins on left and right */ /* Adjust padding as needed */
+  margin-bottom: 30px;
+
+}
+.image-previewdownload {
+    margin-top: 30px;
+  margin: 0 auto; /* Center the image horizontally */
+  display: block; /* Ensure the image takes up full width */
+  max-width: 400px; /* Set a maximum width for the image */
+  width: auto;
+  height: auto; /* Maintain aspect ratio */
+  padding: 10px; /* Add margins on left and right */ /* Adjust padding as needed */
+  margin-bottom: 30px;
+
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="w3-bar w3-black w3-hide-small">
+            <a href="https://github.com/GithubRaviSharma" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ravi-sharma-586838287/" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/raviiiiiiiiiii_" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-right"><i class="fa fa-arrow-left"></i></a>
+        </div>
+    </div>  
+    <div class="container1">
+        <p style="text-align: center;">Please upload your image here</p>
+        <div class="button-container">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button class="button1" >Upload Image</button>      
+        </div>
+    </div>
+    <div class="img-button"></div> <!-- Image button here -->
+
+    <div class="container2">
+        <!-- Content of second container goes here -->
+        <p style="text-align: center;">Please download your image from here</p>
+        <div class="button-container">
+                <img class="image-preview" id="grayscale-image" alt=""> 
+            <button class="button2">Download Image</button>
+        </div>
+    </div>
+    
+    
+        <script src="Convert4kui.js"></script>
+
+
+</body>
+</html>
+
