@@ -2,6 +2,10 @@
 
 Welcome to the Online Black and White Image Converter project! This tool allows you to easily convert your images to black and white right in your browser, with just a few clicks.
 
+## Project Video
+
+<iframe src="https://drive.google.com/drive/folders/1qGwSZH8GodQjtUvx7CzSH5MC2kj5oDHQ" width="640" height="480"></iframe>
+
 ## Features
 - **Simple Conversion**: Easily convert any image to black and white.
 - **Online Access**: No need to download or install anything, just upload your image and convert it online.
